@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма валідації</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="infoForm">
+      <h3>Форма для заповнення</h3>
+      <label for="fullName">ПІБ:</label>
+      <input
+        type="text"
+        id="fullName"
+        placeholder="Поліщук.Д.П."
+        name="fullName"
+        required
+      /><br />
+
+      <label for="idCard">ID-картка:</label>
+      <input
+        type="text"
+        id="idCard"
+        placeholder="АС №121121"
+        name="idCard"
+        required
+      /><br />
+
+      <label for="faculty">Факультет:</label>
+      <input
+        type="text"
+        id="faculty"
+        placeholder="ФІОТ"
+        name="faculty"
+        required
+      /><br />
+
+      <label for="birthDate">Дата народження:</label>
+      <input
+        type="text"
+        id="birthDate"
+        placeholder="02.07.2005"
+        name="birthDate"
+        required
+      /><br />
+
+      <label for="address">Адреса:</label>
+      <input
+        type="text"
+        id="address"
+        placeholder="м. Луцьк"
+        name="address"
+        required
+      /><br />
+
+      <button type="button" onclick="validateForm()">Перевірити</button>
+    </form>
+    <div class="output-section">
+      <h2>Введені дані</h2>
+      <p><strong>ПІБ:</strong> <span id="outputFullname"></span></p>
+      <p><strong>Група:</strong> <span id="outputIdCard"></span></p>
+      <p><strong>Варіант:</strong> <span id="outputFaculty"></span></p>
+      <p><strong>Телефон:</strong> <span id="outputBirthDate"></span></p>
+      <p><strong>Пошта:</strong> <span id="outputAddress"></span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

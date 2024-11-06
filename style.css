@@ -1,0 +1,17 @@
+input{
+    display: block;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+label{
+    margin-left: 5px;
+}
+
+.error {
+    border: 2px solid rgb(212, 31, 31); 
+}
+
+
+button{
+    margin-left: 40px;
+}
